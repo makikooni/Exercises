@@ -30,19 +30,11 @@ body {
     text-align:center;
 }
 
-.sidebar {
-    background: rgb(255, 255, 255);
-    position:absolute;
-    width:30vw;
-    height:100vh;
-    right:0px;
-
-}
 
 .main {
     background: rgb(192, 192, 224);
-    width:70vw;
-    height:100vh;
+    width: 100%;
+    height:100%;
     padding:20px;
     display: flex;
     flex-wrap: wrap;
@@ -56,28 +48,50 @@ body {
 .name {
     font-family: "Racing Sans One", serif;
     font-size:18px;
-    text-align:center;
+    text-align: center;
     margin:0;
     
 
 }
 
-.cave-image{
+.image{
     width:100%;
-    display:block;
-    margin:auto;
+    height: 100%;
+    display: block;
+    margin: auto;
     position: relative;
+    object-fit: cover;
+
 }
+
+.image:hover{
+    border: 5px solid rgba(121, 223, 229, 0.564);
+    box-shadow: 0 0 110px #47b900;
+}
+
+/*
+.glowing-border {
+    border: 2px solid #dadada;
+    border-radius: 7px;
+}
+
+.glowing-border:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+*/
 
 .cat-component {
     width:400px;
-    display:inline-block;
-    vertical-align:top;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .cat-component:hover{
-    background: rgb(255, 255, 255);
-    border: 1px solid black;
+    background: none;
+    
 }
 
 .description {
@@ -87,4 +101,3 @@ body {
 .cat-component:hover .desc{
     display:block;
 }
-
