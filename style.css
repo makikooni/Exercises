@@ -1,4 +1,14 @@
+/*div {
+    width:500px;
+    height:500px;
+    background: pink;
+    padding:50px;
+    margin:50px;
+    padding-left:100 px;
+    border: 10 px dotted yellow;
+    border-radius: 50 px;
 
+}*/
 
 *{
     box-sizing:border-box;
@@ -11,7 +21,7 @@ body {
 
 
 .header {
-    background: rgb(233, 198, 232);
+    background: rgb(98, 90, 120);
     height:100px;
     width:100vw;
     font-family: "Racing Sans One", serif;
@@ -30,7 +40,7 @@ body {
 }
 
 .main {
-    background: rgb(236, 216, 232);
+    background: rgb(192, 192, 224);
     width:70vw;
     height:100vh;
     padding:20px;
@@ -42,27 +52,25 @@ body {
 }
 
 
+
 .name {
     font-family: "Racing Sans One", serif;
     font-size:18px;
     text-align:center;
     margin:0;
     
+
 }
 
-.image{
+.cave-image{
     width:100%;
-    height: 100%;
-    fit: cover;
-    width: auto;
     display:block;
     margin:auto;
     position: relative;
 }
 
 .cat-component {
-    width:200px;
-    height: auto;
+    width:400px;
     display:inline-block;
     vertical-align:top;
 }
@@ -75,3 +83,8 @@ body {
 .description {
     display:none;
 }
+
+.cat-component:hover .desc{
+    display:block;
+}
+
