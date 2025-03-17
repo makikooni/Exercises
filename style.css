@@ -61,7 +61,8 @@ body {
 }
 
 .cat-component {
-    width:400px;
+    width:200px;
+    height: auto;
     display:inline-block;
     vertical-align:top;
 }
